@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h1 class="calculator__heading">Calculator</h1>
+        <div class="calculator__input">
+          <input
+            class="calculator__input--calculating"
+            type="text"
+            name="calculating"
+            value="50*2/"
+          />
+          <input
+            class="calculator__input--calculated"
+            type="text"
+            name="calculated"
+            value="/"
+          />
+        </div>
+        <div class="calculator__buttons">
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="seven"
+            value="7"
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="eight"
+            value="8"
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="nine"
+            value="9"
+          />
+          <input
+            class="calculator__buttons--operator"
+            type="button"
+            name="operator"
+            value=" / "
+            onclick="calc.input.value += '/'"
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="four"
+            value="4"
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="five"
+            value="5"
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="six"
+            value="6"
+          />
+          <input
+            class="calculator__buttons--operator"
+            type="button"
+            name="operator"
+            value=" * "
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="one"
+            value="1"
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="two"
+            value="2"
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="three"
+            value="3"
+          />
+          <input
+            class="calculator__buttons--operator"
+            type="button"
+            name="operator"
+            value=" + "
+          />
+          <input
+            class="calculator__buttons--operator"
+            type="button"
+            name="operator"
+            value=" . "
+          />
+          <input
+            class="calculator__buttons--numbers"
+            type="button"
+            name="zero"
+            value="0"
+          />
+          <input
+            class="calculator__buttons--sum"
+            type="button"
+            name="sum"
+            value=" = "
+          />
+          <input
+            class="calculator__buttons--operator"
+            type="button"
+            name="minus"
+            value=" - "
+          />
+          <input
+            class="calculator__buttons--clear"
+            type="button"
+            name="clear"
+            value="clear"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
