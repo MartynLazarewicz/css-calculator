@@ -1,134 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS - Calculator</title>
-    <link rel="stylesheet" href="dist/main.css" />
+    <title>html-css-calculator</title>
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="wrapper">
       <div class="calculator">
-        <h1 class="calculator__heading">Calculator</h1>
-        <div class="calculator__input">
-          <input
-            class="calculator__input--calculating"
-            type="text"
-            name="calculating"
-            value="50*2/"
-          />
-          <input
-            class="calculator__input--calculated"
-            type="text"
-            name="calculated"
-            value="/"
-          />
+        <div class="heading">
+          <h1 class="title">Calculator</h1>
         </div>
-        <div class="calculator__buttons">
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="seven"
-            value="7"
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="eight"
-            value="8"
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="nine"
-            value="9"
-          />
-          <input
-            class="calculator__buttons--operator"
-            type="button"
-            name="operator"
-            value=" / "
-            onclick="calc.input.value += '/'"
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="four"
-            value="4"
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="five"
-            value="5"
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="six"
-            value="6"
-          />
-          <input
-            class="calculator__buttons--operator"
-            type="button"
-            name="operator"
-            value=" * "
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="one"
-            value="1"
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="two"
-            value="2"
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="three"
-            value="3"
-          />
-          <input
-            class="calculator__buttons--operator"
-            type="button"
-            name="operator"
-            value=" + "
-          />
-          <input
-            class="calculator__buttons--operator"
-            type="button"
-            name="operator"
-            value=" . "
-          />
-          <input
-            class="calculator__buttons--numbers"
-            type="button"
-            name="zero"
-            value="0"
-          />
-          <input
-            class="calculator__buttons--sum"
-            type="button"
-            name="sum"
-            value=" = "
-          />
-          <input
-            class="calculator__buttons--operator"
-            type="button"
-            name="minus"
-            value=" - "
-          />
-          <input
-            class="calculator__buttons--clear"
-            type="button"
-            name="clear"
-            value="clear"
-          />
+        <div class="display">
+          <input class="displayText gray" type="text" name="summary" id="summary" value="50*2/" />
+          <input class="displayText" type="text" name="sum" id="sum" value="/" />
+        </div>
+        <div class="numpad">
+          <input class="button" type="button" name="seven" value="7" />
+          <input class="button" type="button" name="eight" value="8" />
+          <input class="button" type="button" name="nine" value="9" />
+          <input class="button operator" type="button" name="operator" value=" / " />
+          <input class="button" type="button" name="four" value="4" />
+          <input class="button" type="button" name="five" value="5" />
+          <input class="button" type="button" name="six" value="6" />
+          <input class="button operator" type="button" name="operator" value=" * " />
+          <input class="button" type="button" name="one" value="1" />
+          <input class="button" type="button" name="two" value="2" />
+          <input class="button" type="button" name="three" value="3" />
+          <input class="button operator" type="button" name="operator" value=" + " />
+          <input class="button operator" type="button" name="operator" value=" . " />
+          <input class="button" type="button" name="zero" value="0" />
+          <input class="button sum" type="button" name="sum" value=" = " />
+          <input class="button operator" type="button" name="operator" value=" - " />
+          <input class="button clear" type="button" name="clear" value="clear" />
         </div>
       </div>
     </div>
